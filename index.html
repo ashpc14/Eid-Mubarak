@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Mubarak</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add your responsive CSS styles here -->
+    <style>
+        /* Example media query for small screens (mobile) */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            .logo img {
+                width: 50px;
+            }
+            main video {
+                width: 100%;
+            }
+            aside {
+                width: 100%;
+                max-width: 300px;
+                margin: 20px;
+            }
+            h1 {
+                font-size: 28px; /* Adjust heading font size for mobile */
+            }
+        }
+
+        /* Example media query for larger screens (tablets, desktops) */
+        @media (min-width: 769px) {
+            /* Your tablet/desktop-specific styles go here */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="eid.svg" alt="Eid Logo">
+        </div>
+    </nav>
+    <main>
+        <video autoplay muted>
+            <source src="eidMubarak.mp4" type="video/mp4">
+        </video>
+    </main>
+    <aside>
+        <p>Hi there!</p>
+        <h1>I'm Ashraf</h1>
+        <p>Wishing you and your family a blessed Eid filled with love, happiness, and countless blessings.</p>
+    </aside>
+</body>
+
+</html>

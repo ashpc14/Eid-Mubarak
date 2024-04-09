@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(5px);
+    font-family: "Bona Nova", serif;
+}
+
+.logo img {
+    width: 30px;
+}
+
+ul {
+    display: inline-flex;
+}
+
+li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    background-color: #fff;
+    height: 2px;
+    transition: width 300ms;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+    max-width: 768px;
+}
+
+aside {
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical position */
+    left: 20px;
+    color: #fff;
+    font-family: "poppins", sans-serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 28px; /* Adjust heading font size for mobile */
+    font-weight: 600;
+}
